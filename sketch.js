@@ -37,6 +37,7 @@ function draw() {
   rectMode(CENTER);
   background("yellow");
   keyPressed()
+  
   roof.display()
   ball1.display()
   ball2.display()
@@ -51,10 +52,8 @@ function draw() {
 }
 function keyPressed(){
 	if (keyCode==UP_ARROW){
-		Matter.Body.applyForce(ball1.body,ball1.body.position,{x:-50,y:-45})
+		Matter.Body.applyForce(ball1.body,ball1.body.position,{x:-8,y:-3})
 	}
 }
-function drawLine(constraint) { 
-	//bobBodyPosition=constraint.bodyA.position roofBodyPosition=constraint.bodyB.position roofBodyOffset=constraint.pointB; roofBodyX=roofBodyPosition.x+roofBodyOffset.x roofBodyY=roofBodyPosition.y+roofBodyOffset.y line(bobBodyPosition.x, bobBodyPosition.y, roofBodyX,roofBodyY); }
 
-}
+
